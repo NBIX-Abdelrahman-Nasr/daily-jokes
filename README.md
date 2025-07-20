@@ -8,6 +8,29 @@ A Next.js application that delivers fresh jokes daily to brighten your day with 
 - Clean, modern UI
 - Responsive design
 - Built with Next.js 15 and React 19
+- TypeScript for type safety
+- Component-based architecture
+
+## Project Structure
+
+```
+daily-jokes/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout with metadata
+│   │   ├── page.tsx            # Home page with navigation
+│   │   └── jokes/
+│   │       └── page.tsx        # Jokes page
+│   └── components/
+│       ├── index.ts            # Component exports
+│       ├── joke-card.interface.ts  # TypeScript interfaces
+│       └── joke-card.tsx       # Reusable joke card component
+├── public/                     # Static assets
+├── package.json               # Dependencies and scripts
+├── tsconfig.json             # TypeScript configuration
+├── tailwind.config.js        # Tailwind CSS configuration
+└── eslint.config.mjs         # ESLint configuration
+```
 
 ## Getting Started
 
@@ -27,6 +50,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Development Guidelines
+
+### Code Style
+- Use kebab-case for file and component names
+- Separate interfaces in different files
+- Follow TypeScript best practices
+- Use functional components with hooks
+
+### Component Architecture
+- Modular and reusable components
+- TypeScript interfaces for type safety
+- Consistent styling with Tailwind CSS
+- Responsive design principles
+
+### File Naming Convention
+- Components: `component-name.tsx`
+- Interfaces: `component-name.interface.ts`
+- Pages: `page.tsx` (Next.js App Router convention)
+
 ## Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) with App Router
@@ -34,6 +76,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 - **Styling**: Tailwind CSS
 - **Fonts**: Geist font family
 - **Deployment**: Vercel
+- **Code Quality**: ESLint
 
 ## Learn More
 
