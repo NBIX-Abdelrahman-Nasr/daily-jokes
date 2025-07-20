@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+
+- use kebab style naming for all files and components
+- separate interfaces in different files
+- you can use third party libraries, but ask me firstly
